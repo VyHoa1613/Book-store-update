@@ -1,0 +1,8 @@
+h1 Update book 
+form(action="/users/update",method="POST")
+    label(for="name") Name
+    br
+    input(type="text",name="name")
+    br
+    input(name="id",type="text",value=user.id,style="display:none")
+    button Update

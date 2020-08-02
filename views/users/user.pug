@@ -1,0 +1,26 @@
+
+h1 New User
+style.
+  th,td{
+  border: 1px soild black;
+  text-align:center;
+  }
+  table{
+    width: 500px;
+  }
+table
+      tr
+        th Name
+        th View  
+        th Update
+        th Delete
+      each user in users   
+        tr
+          td=user.name
+          td
+            a(href="/users/"+user.id) View
+          td
+            a(href="/users/"+user.id+"/update") Update
+          td
+            a(href="/users/"+user.id+"/delete") Delele
+a(href="/users/create") New Account
